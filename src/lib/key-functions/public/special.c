@@ -54,7 +54,7 @@ void kbfun_shift_press_release(void) {
  *
  * [note]
  *   If either of the shifts are pressed when the second key is pressed, they
- *   wil be released so that capslock will register properly when pressed.
+ *   will be released so that capslock will register properly when pressed.
  *   Capslock will then be pressed and released, and the original state of the
  *   shifts will be restored
  */
