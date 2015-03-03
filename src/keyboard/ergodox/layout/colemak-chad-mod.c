@@ -130,7 +130,7 @@ KB_MATRIX_LAYER(
     0, _7_kp, _8_kp, _9_kp, 0, 0, 0,
     3, _4_kp, _5_kp, _6_kp, _add_kp, _arrowU,
     _0_kp, _1_kp, _2_kp, _3_kp, _arrowL, _arrowD, _arrowR,
-    0, 0, 0, _dec_del_kp, _enter,
+    _0_kp, _0_kp, _dec_del_kp, _dec_del_kp, _enter,
     0, 0,
     0, 0, 0,
     0, 0, 0,
@@ -233,7 +233,7 @@ KB_MATRIX_LAYER(
     NULL, NULL, ktrans,
     ktrans, ktrans, ktrans,
     // right hand
-    kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
+    kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, dbtldr,
     ktrans, ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
     ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
     ktrans, ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
