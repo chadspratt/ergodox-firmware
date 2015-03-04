@@ -42,6 +42,7 @@ void kbfun_layer_pop_all(void) {
 #define  lpop2    &kbfun_layer_pop_2
 #define  lpop3    &kbfun_layer_pop_3
 #define  lpop4    &kbfun_layer_pop_4
+#define  dbtldr   &kbfun_jump_to_bootloader
 #define  sshprre  &kbfun_shift_press_release
 #define  s2kcap   &kbfun_2_keys_capslock_press_release
 // ----------------------------------------------------------------------------
