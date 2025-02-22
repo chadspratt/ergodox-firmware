@@ -98,7 +98,7 @@ KB_MATRIX_LAYER(
 ),
 // LAYER 2
 // function and media keys
-// game layer on 1,1
+// game layer (4) on 1,1
 KB_MATRIX_LAYER(
     // unused
     0,
@@ -151,11 +151,11 @@ KB_MATRIX_LAYER(
 	// unused
 	0,
 	// left hand
-	0, 0, 0, 0, 0, 0, 0,
+	_1, 0, 0, 0, 0, 0, 0,
 	0, _Q, _W, _E, _R, _T, 0,
-	_capsLock, _A, _S, _D, _F, _G,
+	_M, _A, _S, _D, _F, _G,
 	0, _Z, _X, _C, _V, _B, 0,
-	0, 0, 0, 0, 0,
+	0, _altL, 0, 0, 0,
 	0, 0,
 	0, 0, 0,
 	_space, 0, 0,
@@ -271,14 +271,14 @@ KB_MATRIX_LAYER(
     // unused
     NULL,
     // left hand
-    ktrans, ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
+    kprrel, ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
     ktrans, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
     ktrans, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
-    ktrans, ktrans, ktrans, ktrans, ktrans,
+    ktrans, kprrel, ktrans, ktrans, ktrans,
     ktrans, ktrans,
-    NULL, NULL, ktrans,
-    kprrel, ktrans, lpop4,
+    NULL, NULL, lpop4,
+    kprrel, ktrans, ktrans,
     // right hand
     ktrans, ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
     ktrans, ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
@@ -392,14 +392,14 @@ KB_MATRIX_LAYER(
     // unused
     NULL,
     // left hand
-    ktrans, ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
+    kprrel, ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
     ktrans, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
     ktrans, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
-    ktrans, ktrans, ktrans, ktrans, ktrans,
+    ktrans, kprrel, ktrans, ktrans, ktrans,
     ktrans, ktrans,
-    NULL, NULL, ktrans,
-    kprrel, ktrans, NULL,
+    NULL, NULL, NULL,
+    kprrel, ktrans, ktrans,
     // right hand
     ktrans, ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
     ktrans, ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
