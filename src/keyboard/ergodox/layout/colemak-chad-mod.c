@@ -29,6 +29,11 @@ void kbfun_layer_pop_all(void) {
   kbfun_layer_pop_10();
 }
 
+void kbfun_pop_numpad_and_hold(void) {
+    kbfun_layer_pop_3();
+    kbfun_press_release();
+}
+
 // DEFINITIONS ----------------------------------------------------------------
 #define  kprrel   &kbfun_press_release
 #define  mprrel   &kbfun_mediakey_press_release
@@ -45,6 +50,7 @@ void kbfun_layer_pop_all(void) {
 #define  dbtldr   &kbfun_jump_to_bootloader
 #define  sshprre  &kbfun_shift_press_release
 #define  s2kcap   &kbfun_2_keys_capslock_press_release
+#define  lpophold   &kbfun_pop_numpad_and_hold
 // ----------------------------------------------------------------------------
 
 // LAYOUT ---------------------------------------------------------------------
@@ -131,7 +137,7 @@ KB_MATRIX_LAYER(
     0, _7_kp, _8_kp, _9_kp, _sub_kp, 0, 0,
     3, _4_kp, _5_kp, _6_kp, _add_kp, _arrowU,
     _0_kp, _1_kp, _2_kp, _3_kp, _arrowL, _arrowD, _arrowR,
-    _0_kp, _0_kp, _dec_del_kp, _dec_del_kp, _enter,
+    _ctrlL, _0_kp, _dec_del_kp, _dec_del_kp, _enter,
     0, 0,
     0, 0, 0,
     0, 0, 0,
@@ -252,7 +258,7 @@ KB_MATRIX_LAYER(
     ktrans, kprrel, kprrel, kprrel, kprrel, ktrans, ktrans,
     lpop3, kprrel, kprrel, kprrel, kprrel, kprrel,
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-    ktrans, ktrans, ktrans, kprrel, kprrel,
+    lpophold, ktrans, ktrans, kprrel, kprrel,
     ktrans, ktrans,
     ktrans, ktrans, ktrans,
     ktrans, ktrans, ktrans,
@@ -372,7 +378,7 @@ KB_MATRIX_LAYER(
     ktrans, kprrel, kprrel, kprrel, kprrel, ktrans, ktrans,
     ktrans, kprrel, kprrel, kprrel, kprrel, kprrel,
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-    ktrans, ktrans, ktrans, kprrel, kprrel,
+    kprrel, ktrans, ktrans, kprrel, kprrel,
     ktrans, ktrans,
     ktrans, ktrans, ktrans,
     ktrans, ktrans, ktrans,
